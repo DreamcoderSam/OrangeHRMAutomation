@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRMAutomation]">
+  <test thread-count="5" name="OrangeHRMAutomation(failed)">
+    <classes>
+      <class name="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest">
+        <methods>
+          <include name="clickAssignLeave"/>
+          <include name="assignLeaveTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest -->
+    </classes>
+  </test> <!-- OrangeHRMAutomation(failed) -->
+</suite> <!-- Failed suite [OrangeHRMAutomation] -->

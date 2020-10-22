@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="OrangeHRMAutomation" duration-ms="24509" started-at="2020-10-23T04:30:15 BDT" finished-at="2020-10-23T04:30:40 BDT">
+    <groups>
+    </groups>
+    <test name="OrangeHRMAutomation" duration-ms="24509" started-at="2020-10-23T04:30:15 BDT" finished-at="2020-10-23T04:30:40 BDT">
+      <class name="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest">
+        <test-method status="PASS" signature="clickAssignLeave()[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest@131276c2]" name="clickAssignLeave" duration-ms="2511" started-at="2020-10-23T04:30:33 BDT" finished-at="2020-10-23T04:30:36 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAssignLeave -->
+        <test-method status="PASS" signature="assignLeaveTest(java.util.List)[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest@131276c2]" name="assignLeaveTest" duration-ms="4031" started-at="2020-10-23T04:30:36 BDT" data-provider="leaveDataProvider" depends-on-methods="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest.clickAssignLeave" finished-at="2020-10-23T04:30:40 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fdDay=28, tdMonth=Oct, tdYear=2020, tdDay=29, comment=I need Leave], AssignLeaveDTO [employeeNmae=Odis Adalwin, leaveType=US - Vacation, fdMonth=Nov, fdYear=2020, fdDay=2, tdMonth=Nov, tdYear=2020, tdDay=4, comment=Going Home]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignLeaveTest -->
+      </class> <!-- com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest -->
+      <class name="com.samrat.OrangeHRMAutomation.Test.LoginTest">
+        <test-method status="PASS" signature="checkLoginTitle()[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.LoginTest@1c3a4799]" name="checkLoginTitle" duration-ms="10167" started-at="2020-10-23T04:30:15 BDT" finished-at="2020-10-23T04:30:26 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginTitle -->
+        <test-method status="PASS" signature="loginTest(java.util.List)[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.LoginTest@1c3a4799]" name="loginTest" duration-ms="6885" started-at="2020-10-23T04:30:26 BDT" data-provider="loginDataProvider" depends-on-methods="com.samrat.OrangeHRMAutomation.Test.LoginTest.checkLoginTitle" finished-at="2020-10-23T04:30:33 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[LoginDTO [username=Tutorial, password=turial123], LoginDTO [username=Admin, password=admin123]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.samrat.OrangeHRMAutomation.Test.LoginTest -->
+    </test> <!-- OrangeHRMAutomation -->
+  </suite> <!-- OrangeHRMAutomation -->
+</testng-results>
