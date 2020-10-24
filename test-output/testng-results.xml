@@ -1,34 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRMAutomation" duration-ms="24509" started-at="2020-10-23T04:30:15 BDT" finished-at="2020-10-23T04:30:40 BDT">
+  <suite name="OrangeHRMAutomation" duration-ms="21999" started-at="2020-10-24T17:13:43 BDT" finished-at="2020-10-24T17:14:05 BDT">
     <groups>
     </groups>
-    <test name="OrangeHRMAutomation" duration-ms="24509" started-at="2020-10-23T04:30:15 BDT" finished-at="2020-10-23T04:30:40 BDT">
+    <test name="OrangeHRMAutomationTest" duration-ms="21999" started-at="2020-10-24T17:13:43 BDT" finished-at="2020-10-24T17:14:05 BDT">
       <class name="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest">
-        <test-method status="PASS" signature="clickAssignLeave()[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest@131276c2]" name="clickAssignLeave" duration-ms="2511" started-at="2020-10-23T04:30:33 BDT" finished-at="2020-10-23T04:30:36 BDT">
+        <test-method status="PASS" signature="clickAssignLeave()[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest@711f39f9]" name="clickAssignLeave" duration-ms="1923" started-at="2020-10-24T17:13:58 BDT" finished-at="2020-10-24T17:14:00 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAssignLeave -->
-        <test-method status="PASS" signature="assignLeaveTest(java.util.List)[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest@131276c2]" name="assignLeaveTest" duration-ms="4031" started-at="2020-10-23T04:30:36 BDT" data-provider="leaveDataProvider" depends-on-methods="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest.clickAssignLeave" finished-at="2020-10-23T04:30:40 BDT">
+        <test-method status="FAIL" signature="assignLeaveTest(java.util.List)[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest@711f39f9]" name="assignLeaveTest" duration-ms="3870" started-at="2020-10-24T17:14:00 BDT" data-provider="leaveDataProvider" depends-on-methods="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest.clickAssignLeave" finished-at="2020-10-24T17:14:04 BDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fdDay=28, tdMonth=Oct, tdYear=2020, tdDay=29, comment=I need Leave], AssignLeaveDTO [employeeNmae=Odis Adalwin, leaveType=US - Vacation, fdMonth=Nov, fdYear=2020, fdDay=2, tdMonth=Nov, tdYear=2020, tdDay=4, comment=Going Home]]]]>
+                <![CDATA[[AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fdDay=28, tdMonth=Oct, tdYear=2020, tdDay=29, comment=I need Leave], AssignLeaveDTO [employeeNmae=null, leaveType=null, fdMonth=null, fdYear=null, fdDay=null, tdMonth=null, tdYear=null, tdDay=null, comment=null]]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest.assignLeaveTest(AssignLeaveTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignLeaveTest -->
       </class> <!-- com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest -->
       <class name="com.samrat.OrangeHRMAutomation.Test.LoginTest">
-        <test-method status="PASS" signature="checkLoginTitle()[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.LoginTest@1c3a4799]" name="checkLoginTitle" duration-ms="10167" started-at="2020-10-23T04:30:15 BDT" finished-at="2020-10-23T04:30:26 BDT">
+        <test-method status="PASS" signature="checkLoginTitle()[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.LoginTest@3fd7a715]" name="checkLoginTitle" duration-ms="8218" started-at="2020-10-24T17:13:43 BDT" finished-at="2020-10-24T17:13:51 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginTitle -->
-        <test-method status="PASS" signature="loginTest(java.util.List)[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.LoginTest@1c3a4799]" name="loginTest" duration-ms="6885" started-at="2020-10-23T04:30:26 BDT" data-provider="loginDataProvider" depends-on-methods="com.samrat.OrangeHRMAutomation.Test.LoginTest.checkLoginTitle" finished-at="2020-10-23T04:30:33 BDT">
+        <test-method status="PASS" signature="loginTest(java.util.List)[pri:0, instance:com.samrat.OrangeHRMAutomation.Test.LoginTest@3fd7a715]" name="loginTest" duration-ms="6471" started-at="2020-10-24T17:13:52 BDT" data-provider="loginDataProvider" depends-on-methods="com.samrat.OrangeHRMAutomation.Test.LoginTest.checkLoginTitle" finished-at="2020-10-24T17:13:58 BDT">
           <params>
             <param index="0">
               <value>
@@ -40,6 +79,6 @@
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- com.samrat.OrangeHRMAutomation.Test.LoginTest -->
-    </test> <!-- OrangeHRMAutomation -->
+    </test> <!-- OrangeHRMAutomationTest -->
   </suite> <!-- OrangeHRMAutomation -->
 </testng-results>

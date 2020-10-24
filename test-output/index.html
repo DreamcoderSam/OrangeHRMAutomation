@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-OrangeHRMAutomation">
-              <span class="suite-name border-passed">OrangeHRMAutomation</span>
+              <span class="suite-name border-failed">OrangeHRMAutomation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRMAutomation" class="hide-methods failed suite-OrangeHRMAutomation"> (hide)</a> <!-- hide-methods failed suite-OrangeHRMAutomation -->
+                      <a href="#" panel-name="suite-OrangeHRMAutomation" class="show-methods failed suite-OrangeHRMAutomation"> (show)</a> <!-- show-methods failed suite-OrangeHRMAutomation -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRMAutomation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMAutomation" title="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest" hash-for-method="assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...)">assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRMAutomation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <a href="#" panel-name="suite-OrangeHRMAutomation" class="show-methods passed suite-OrangeHRMAutomation"> (show)</a> <!-- show-methods passed suite-OrangeHRMAutomation -->
                     </span>
                     <div class="method-list-content passed suite-OrangeHRMAutomation">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMAutomation" title="com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest" hash-for-method="assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...)">assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMAutomation" title="com.samrat.OrangeHRMAutomation.Test.LoginTest" hash-for-method="checkLoginTitle">checkLoginTitle</a> <!-- method navigator-link -->
@@ -134,9 +143,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRMAutomation" class="panel OrangeHRMAutomation">
-          <div class="suite-OrangeHRMAutomation-class-passed">
+          <div class="suite-OrangeHRMAutomation-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,9 +154,23 @@
                   <a name="assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...)">
                   </a> <!-- assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...) -->
                   <span class="method-name">assignLeaveTest</span>
-                  <span class="parameters">([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fdDay=28, tdMonth=Oct, tdYear=2020, tdDay=29, comment=I need Leave], AssignLeaveDTO [employeeNmae=Odis Adalwin, leaveType=US - Vacation, fdMonth=Nov, fdYear=2020, fdDay=2, tdMonth=Nov, tdYear=2020, tdDay=4, comment=Going Home]])</span>
+                  <span class="parameters">([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fdDay=28, tdMonth=Oct, tdYear=2020, tdDay=29, comment=I need Leave], AssignLeaveDTO [employeeNmae=null, leaveType=null, fdMonth=null, fdYear=null, fdDay=null, tdMonth=null, tdYear=null, tdDay=null, comment=null]])</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest.assignLeaveTest(AssignLeaveTest.java:35)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRMAutomation-class-failed -->
+          <div class="suite-OrangeHRMAutomation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="clickAssignLeave">
@@ -190,12 +213,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;OrangeHRMAutomation&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRMAutomation&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRMAutomationTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.samrat.OrangeHRMAutomation.Test.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- OrangeHRMAutomation --&gt;
+  &lt;/test&gt; &lt;!-- OrangeHRMAutomationTest --&gt;
 &lt;/suite&gt; &lt;!-- OrangeHRMAutomation --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,7 +230,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">OrangeHRMAutomation (2 classes)</span>
+                <span class="test-name">OrangeHRMAutomationTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,24 +260,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkLoginTitle')
 data.setCell(0, 2, 'com.samrat.OrangeHRMAutomation.Test.LoginTest')
-data.setCell(0, 3, 10167);
+data.setCell(0, 3, 8218);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.samrat.OrangeHRMAutomation.Test.LoginTest')
-data.setCell(1, 3, 6885);
+data.setCell(1, 3, 6471);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'assignLeaveTest')
 data.setCell(2, 2, 'com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest')
-data.setCell(2, 3, 4031);
+data.setCell(2, 3, 3870);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'clickAssignLeave')
 data.setCell(3, 2, 'com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest')
-data.setCell(3, 3, 2511);
+data.setCell(3, 3, 1923);
 window.suiteTableData['OrangeHRMAutomation']= { tableData: data, tableDiv: 'times-div-OrangeHRMAutomation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-OrangeHRMAutomation">
               </div> <!-- times-div-OrangeHRMAutomation -->
             </div> <!-- times-div -->
@@ -287,18 +310,20 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest([LoginDTO [username=Tutorial, password=turial123], LoginDTO [username=Admin, password=admin123]])</span>
-                <span class="method-start">10952 ms</span>
+                <span class="method-start">8902 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">clickAssignLeave</span>
-                <span class="method-start">17841 ms</span>
+                <span class="method-start">15378 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">assignLeaveTest([AssignLeaveDTO [employeeNmae=Jasmine Morgan, leaveType=CAN - Vacation, fdMonth=Oct, fdYear=2020, fd...)</span>
-                <span class="method-start">20431 ms</span>
+                <span class="method-start">17370 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

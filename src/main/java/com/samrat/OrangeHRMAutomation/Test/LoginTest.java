@@ -5,14 +5,16 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.samrat.OrangeHRMAutomation.DTO.LoginDTO;
 import com.samrat.OrangeHRMAutomation.DataProvider.LoginDataProvider;
 import com.samrat.OrangeHRMAutomation.Utils.DriverManager;
+import com.samrat.OrangeHRMAutomation.Utils.TestNGReporting;
 import com.samrat.OrangeHRMAutomation.Utils.UrlTextUtils;
 import com.samrat.OrangeHRMAutomation.Utils.XpathUtils;
-
+@Listeners(TestNGReporting.class)
 public class LoginTest {
 	private WebDriver cdriver = null;
 	@Test

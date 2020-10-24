@@ -129,43 +129,42 @@ public class ExcelUtils {
 					break;
 				case 8:
 					leavedto.setComment(leaveformatter.formatCellValue(cell));
-					cellcounter++;
 					break;
-				case 9:
-					leavedto.setEmployeeNmae(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 10:
-					leavedto.setLeaveType(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 11:
-					leavedto.setFdMonth(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 12:
-					leavedto.setFdYear(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 13:
-					leavedto.setFdDay(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 14:
-					leavedto.setTdMonth(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 15:
-					leavedto.setTdYear(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 16:
-					leavedto.setTdDay(leaveformatter.formatCellValue(cell));
-					cellcounter++;
-					break;
-				case 17:
-					leavedto.setComment(leaveformatter.formatCellValue(cell));
-					break;
+//				case 9:
+//					leavedto.setEmployeeNmae(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 10:
+//					leavedto.setLeaveType(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 11:
+//					leavedto.setFdMonth(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 12:
+//					leavedto.setFdYear(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 13:
+//					leavedto.setFdDay(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 14:
+//					leavedto.setTdMonth(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 15:
+//					leavedto.setTdYear(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 16:
+//					leavedto.setTdDay(leaveformatter.formatCellValue(cell));
+//					cellcounter++;
+//					break;
+//				case 17:
+//					leavedto.setComment(leaveformatter.formatCellValue(cell));
+//					break;
 				}
 				
 			}

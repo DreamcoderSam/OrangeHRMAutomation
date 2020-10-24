@@ -1,6 +1,6 @@
 <suite name = "OrangeHRMAutomation">
 
-   <test name = "OrangeHRMAutomation">
+   <test name = "OrangeHRMAutomationTest">
       <classes>
          <class name = "com.samrat.OrangeHRMAutomation.Test.LoginTest" />
          <class name = "com.samrat.OrangeHRMAutomation.Test.AssignLeaveTest" />
